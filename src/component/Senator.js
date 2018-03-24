@@ -1,19 +1,19 @@
-import React, {Component} from 'react'
+import React from 'react'
 
-export default class extends Component{
+export default class extends React.Component{
   render(){
     const senator = this.props.senator;
     return(
-      <div>
+      <div className="sentator">
         <h3>
           {senator.person.name} -    {senator.senator_rank_label}
         </h3>
-        <h4>
-          {senator.startdate}
-        </h4>
-        <h4>
-          {senator.enddate}
-        </h4>
+        <p>
+          Term
+        </p>
+        <p>
+          {senator.startdate} to {senator.enddate}
+          </p>
       </div>
     );
   }

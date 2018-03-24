@@ -1,0 +1,24 @@
+.sentator{
+ border-style: solid;
+  border-color: white;
+}
+.republicans{
+  background-color: red;
+  color: white;
+  border-style: solid;
+  text-align: center;
+}
+
+.democrats{
+  background-color: darkblue;
+  color: white;
+  border-style: solid;
+  text-align: center;
+}
+
+.independants{
+  background-color: darkgreen;
+  color: white;
+  border-style: solid;
+  text-align: center;
+}
