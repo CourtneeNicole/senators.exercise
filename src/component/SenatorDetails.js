@@ -4,8 +4,7 @@ export default class extends React.Component{
   render(){
     const senator = this.props.senator;
     return(
-      <div className="senator"
-           onClick={e => this.props.onSenatorSelected(senator)}>
+      <div className="senator">
         <h3>
           {senator.person.name} -    {senator.senator_rank_label}
         </h3>

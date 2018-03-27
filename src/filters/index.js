@@ -1,4 +1,5 @@
 import senators from '../data/senators'
+import Search from '../component/Search'
 
 export const allSenators = () => {
   return (senators)
@@ -30,9 +31,13 @@ export const allFemale = () => {
 export const allMale = () => {
   return byGender('male')
 }
-export const byState = (state = '') => {
+export const byState = (state) => {
   return allSenators().filter(senator =>senator.state === state)
 }
 export const allUtah = () => {
   return byState('UT')
 }
+
+export const findSenator = senator => allSenators()
+  .filter(s => s.person.cspanid === senator.person.cspanid)
+  .reduce((prev, current) => current)
