@@ -5,9 +5,24 @@ export default class extends React.Component{
     const senator = this.props.senator;
     return(
       <div className="senator">
-        <h3>
+        <h2>Details</h2>
+        <h4>
           {senator.person.name} -    {senator.senator_rank_label}
-        </h3>
+          <br/>
+        </h4>
+        <h4>
+          <a href={senator.person.link}>Senator Profile</a>
+        <br/>
+         Phone: {senator.phone}
+          <br/>
+         Address: {senator.extra.address}
+          <br/>
+            <a href={senator.extra.contact_form}>Contact Form</a>
+            <br/>
+          Twitter: {senator.twitterid}
+          <br/>
+          youtube: {senator.youtubeid}
+        </h4>
       </div>
     );
   }
